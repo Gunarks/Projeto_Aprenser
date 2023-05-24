@@ -2,6 +2,7 @@
     --primary-color: #FED001;
 }
 
+/* Tags */
 html {
     /* font-size: 62.5%;
     font-family: 'Inter', sans-serif;
@@ -15,8 +16,47 @@ p,a {
 nav a {
     color: inherit;
 }
+
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+
+/* Generic class */
+
+.btn {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    display: inline-block;
+    color: inherit;
+    transition: all .3s linear;
+}
+.btn:hover {
+    background-color: #e2e250;
+}
+
+.section_title {
+    text-align: center;
+    padding: 6rem 0;
+}
+.section_btn {
+    margin: 7rem 0;
+}
+
+/* Containers */
 .upper {
     text-transform: uppercase;
+}
+.wrapper_container {
+    padding-top: 1px;
 }
 .wrapper_container-dark {
     background-color: #2a2a2a;
@@ -31,9 +71,25 @@ nav a {
     color: #FAFAFA;
 }
 .container {
-    max-width: 127.6rem;
+    max-width: 127.2rem;
     margin: 0 auto;
 }
+
+.wrapper_container-hero {
+    background-image: linear-gradient(transparent, rgb(234, 234, 30));
+}
+
+.wrapper_container_fixed {
+    position:sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.wrapper_container_padded {
+    padding-top: 7rem;
+}
+
+/* Header e Navigate */
 .header {
     display: flex;
     justify-content: space-between;
@@ -54,6 +110,87 @@ nav a {
     transition: all .5s linear;
 }
 .header_nav ul li a:hover{
-   background-color: var(--primary-color);
-   color: #2a2a2a;
+   background-color: #000;
+}
+
+/* Banners */
+
+.hero_banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+}
+.hero_title {
+    margin-bottom: 4rem;
+}
+
+/*Cards */
+
+.cursos {
+    text-align: center;
+}
+.container_cursos {
+    display: flex;
+    text-align: start;
+    gap: 2rem;
+}
+.cursos_card {
+    flex: 1;
+}
+.cursos_card img {
+    width: 100%;
+    display: block;
+}
+.cursos_card_content h3 {
+    font-size: 2.4rem;
+    padding: 1rem 0;
+}
+.cursos_card_content p {
+    line-height: 1.5;
+    font-size: 1.8rem;
+}
+.cursos_card_content {
+    /* min-height: 25.2rem; */
+    padding: 1.5rem 1.2rem;
+    align-items: center;
+    border: 1px solid #949494;
+    border-radius: 0 0 8px 8px;
+    border-top: transparent;
+}
+
+/* School section */
+
+.section_school {
+    display: flex;
+    gap: 10rem;
+    padding-top: 6rem;
+}
+
+.section_school h2 {
+    font-size: 3.2rem;
+    text-align: start;
+    padding: 2rem 0;
+}
+.section_school p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+/* Contact and footer */
+
+.contacts_address {
+    text-align: end;
+    font: 400 1.8rem 'Inter', sans-serif;
+    padding: 3rem 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 4rem;
+}
+.footer a {
+    text-decoration: none;
+    color: var(--primary-color);
+    text-decoration: underline;
 }
