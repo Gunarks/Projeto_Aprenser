@@ -111,6 +111,7 @@ h3 {
 }
 .header_nav ul li a:hover{
    background-color: #000;
+   color: purple;
 }
 
 /* Banners */
